@@ -64,6 +64,7 @@ body {
   display: none;
   font-size: 20px;
   transition: 0.3;
+  margin: 0 0 5px;
 }
 .main .container .box .yourBirthday {
   display: none;
@@ -107,6 +108,9 @@ body {
 
   .main .container .box p span {
     font-size: 19px;
+  }
+  .main .container .box form .btn{
+    margin-bottom: 40px;
   }
   .main .container .box form input,
   .main .container .box form .btn {

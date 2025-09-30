@@ -40,19 +40,22 @@ btn.onclick = (event) => {
   }
   // Show Result
 
-  if (userBirth > curDate) {
+  if (userBirth > curDate || !inputDate.value) {
+    btn.style.marginBottom = "10px";
     result.style.display = "none";
     message.style.display = "block";
     message.innerHTML = "Wrong Entery";
     message.style.color = "red";
   } else {
     if (curMonth === userMonth && curDay === userDay) {
+      btn.style.marginBottom = "10px";
       message.innerHTML = "Happy Birthday🎉";
       message.style.display = "block";
       message.style.color = "black";
     } else {
       message.style.display = "none";
     }
+btn.style.marginBottom="10px";
     year.innerHTML = `${diffYear} `;
     month.innerHTML = `${diffMonth} `;
     day.innerHTML = `${diffDay} `;
