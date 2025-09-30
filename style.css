@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #5a21ae;
+  --result-color: #8738ff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--main-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main .container {
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.main .container .box {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main .container .box form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main .container .box form label {
+  font-weight: bold;
+}
+.main .container .box form input,
+.main .container .box form .btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.main .container .box form .btn {
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main .container .box form .btn:hover {
+  background-color: var(--result-color);
+}
+.main .container .box .result {
+  display: none;
+  font-size: 20px;
+  transition: 0.3;
+}
+.main .container .box .yourBirthday {
+  display: none;
+  margin: 0 0 12px;
+  font-size: 20px;
+  transition: 0.3;
+}
+.main .container .box p span {
+  color: var(--result-color);
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.3;
+}
+.main .container .box i {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #9a9a9a;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  display: block;
+  transform: translateX(-50%);
+  width: 100%;
+}
+/* Media Screen   */
+@media (max-width: 776px) {
+  body{
+    height: 100svh;
+  }
+  .main .container {
+    height: 70%;
+    padding-top: 50px;
+  }
+  
+  .main .container .box .yourBirthday,
+  .main .container .box .result,
+  .main .container .box p {
+    font-size: 17px;
+  }
+
+  .main .container .box p span {
+    font-size: 19px;
+  }
+  .main .container .box form input,
+  .main .container .box form .btn {
+    font-size: 15px;
+  }
+}
