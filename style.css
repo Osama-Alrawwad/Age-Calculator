@@ -48,6 +48,7 @@ body {
   margin: 10px 0;
   padding: 10px 15px;
   font-size: 20px;
+  border-radius: 7px;
 }
 .main .container .box form .btn {
   border: none;
@@ -55,6 +56,7 @@ body {
   color: white;
   font-weight: 500;
   cursor: pointer;
+  margin-bottom: 40px;
   transition: 0.2s;
 }
 .main .container .box form .btn:hover {
@@ -92,14 +94,14 @@ body {
 }
 /* Media Screen   */
 @media (max-width: 776px) {
-  body{
+  body {
     height: 100svh;
   }
   .main .container {
     height: 70%;
     padding-top: 50px;
   }
-  
+
   .main .container .box .yourBirthday,
   .main .container .box .result,
   .main .container .box p {
@@ -108,9 +110,6 @@ body {
 
   .main .container .box p span {
     font-size: 19px;
-  }
-  .main .container .box form .btn{
-    margin-bottom: 40px;
   }
   .main .container .box form input,
   .main .container .box form .btn {
